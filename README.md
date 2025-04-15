@@ -1,70 +1,113 @@
-# Getting Started with Create React App
+# Healthcare Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive healthcare analytics dashboard built with React and Node.js, featuring cost predictions and data visualization.
+
+## Overview
+
+This dashboard provides insights into healthcare costs, patient data, and medical trends using data from multiple healthcare sources. It visualizes healthcare costs across different cities and provides predictive analytics for healthcare expenses.
+
+## Features
+
+- Healthcare cost predictions
+- City-wise cost comparison
+- Interactive data visualization
+- Patient data analytics
+- Medical trend analysis
+- Real-time data updates
+
+## Tech Stack
+
+- Frontend: React.js
+- Backend: Node.js/Express
+- Data Visualization: Recharts
+- Data Processing: CSV Parser
+
+## Project Structure
+
+```
+healthcare-dashboard/
+├── server/
+│   ├── server.js
+│   └── data/
+│       ├── careplans.csv
+│       ├── conditions.csv
+│       ├── medications.csv
+│       └── observations.csv
+└── src/
+    ├── components/
+    │   ├── HealthcareDashboard.js
+    │   ├── CityCostComparison.js
+    │   └── SimpleDashboard.js
+    └── App.js
+```
+
+## Installation
+
+1. Clone the repository:
+```bash
+git clone https://github.com/nagapavanmuni/healthcare-dashboard.git
+cd healthcare-dashboard
+```
+
+2. Install dependencies:
+```bash
+npm install
+```
+
+3. Start the development server:
+```bash
+npm run dev
+```
 
 ## Available Scripts
 
-In the project directory, you can run:
+### `npm run dev`
+Runs both the backend server and React frontend concurrently.
+- Frontend: [http://localhost:3000](http://localhost:3000)
+- Backend: [http://localhost:5000](http://localhost:5000)
 
 ### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Runs only the React frontend in development mode.
 
 ### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in interactive watch mode.
 
 ### `npm run build`
+Builds the app for production to the `build` folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API Endpoints
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- `GET /api/healthcare-costs`: Retrieves healthcare cost data
+- `GET /api/city-comparison`: Gets city-wise cost comparison data
+- `GET /api/patient-data`: Fetches patient statistics
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Data Sources
 
-### `npm run eject`
+The dashboard uses various healthcare datasets located in `server/data/`:
+- Care Plans
+- Medical Conditions
+- Medications
+- Patient Observations
+- Healthcare Providers
+- Medical Procedures
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## Contributing
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## License
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Learn More
+## Acknowledgments
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Create React App documentation
+- Express.js
+- Recharts library
+- Healthcare data providers
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+For more information about Create React App, visit the [official documentation](https://facebook.github.io/create-react-app/docs/getting-started).
