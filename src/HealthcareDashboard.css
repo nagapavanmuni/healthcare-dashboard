@@ -629,6 +629,21 @@
   margin-top: 1.5rem;
 }
 
+.filter-actions .btn:hover {
+  transform: translateY(-2px);
+  transition: all 0.2s ease;
+}
+
+.filter-actions .primary-btn:active {
+  background: #3255df !important;
+  transform: translateY(1px);
+}
+
+.filter-actions .secondary-btn:active {
+  background: #e0e0e0;
+  transform: translateY(1px);
+}
+
 .filter-footer {
   padding: 1.25rem 1.5rem;
   border-top: 1px solid #e0e0e0;
