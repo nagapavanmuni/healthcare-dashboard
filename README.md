@@ -4,6 +4,8 @@ A comprehensive healthcare analytics dashboard built with React and Node.js, fea
 
 ![dashboard](Dashboard.png)
 
+![dashboard](prediction.png)
+
 ## Overview
 
 This dashboard provides insights into healthcare costs, patient data, and medical trends using data from multiple healthcare sources. It visualizes healthcare costs across different cities and provides predictive analytics for healthcare expenses.
