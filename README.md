@@ -2,9 +2,9 @@
 
 A comprehensive healthcare analytics dashboard built with React and Node.js, featuring cost predictions and data visualization.
 
-![dashboard](Dashboard.png)
+![dashboard](pictures/Dashboard.png)
 
-![dashboard](prediction.png)
+![dashboard](pictures/prediction.png)
 
 ## Overview
 
